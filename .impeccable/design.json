@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-07-06T07:11:00Z",
+  "title": "Design System: OpenCode AI E-commerce",
+  "extensions": {
+    "colorMeta": {
+      "primary": { "role": "primary", "displayName": "Digital Indigo", "canonical": "#4f46e5", "tonalRamp": ["#312e81", "#3730a3", "#4338ca", "#4f46e5", "#6366f1", "#818cf8", "#a5b4fc", "#c7d2fe", "#e0e7ff"] },
+      "chart-3": { "role": "secondary", "displayName": "Electric Violet", "canonical": "#8b5cf6", "tonalRamp": ["#4c1d95", "#5b21b6", "#6d28d9", "#7c3aed", "#8b5cf6", "#a78bfa", "#c4b5fd", "#ddd6fe", "#ede9fe"] },
+      "chart-2": { "role": "tertiary", "displayName": "Cyan Pulse", "canonical": "#06b6d4", "tonalRamp": ["#164e63", "#155e75", "#0e7490", "#0891b2", "#06b6d4", "#22d3ee", "#67e8f9", "#a5f3fc", "#cffafe"] }
+    }
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Solid digital indigo button with ripple effect.",
+      "html": "<button class=\"ds-btn-primary\">CONTINUE SHOPPING</button>",
+      "css": ".ds-btn-primary { background: #4f46e5; color: #fff; padding: 0.5rem 1rem; border-radius: 0.75rem; border: none; font-weight: 500; transition: transform 0.15s, box-shadow 0.15s; } .ds-btn-primary:hover { box-shadow: 0 4px 14px 0 rgba(79, 70, 229, 0.39); transform: translateY(-1px); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Intelligent Boutique",
+    "overview": "Clean and focused with a hint of playfulness, rejecting the dry B2B dashboard look. The system combines modern e-commerce paradigms with bleeding-edge AI interaction models, ensuring the user feels assisted, never overwhelmed. It explicitly rejects cluttered legacy e-commerce grids, boring dry B2B enterprise dashboards, and generic SaaS 'cream/sand' templates.",
+    "keyCharacteristics": [
+      "Focused, seamless, high-touch.",
+      "Soft, generous radii and glassmorphism.",
+      "Vibrant, energetic accents over a clean, neutral canvas."
+    ],
+    "rules": [
+      { "name": "The Intelligent Pop Rule", "body": "Accents (Violet, Cyan) are reserved for AI-driven moments, gradients, and subtle background meshes. Standard commerce UI relies entirely on Digital Indigo and Neutrals.", "section": "colors" },
+      { "name": "The Functional Clarity Rule", "body": "The UI must never feel cramped. Body copy should breathe, and headings must use negative tracking slightly to feel engineered and sharp.", "section": "typography" },
+      { "name": "The Frosted Glass Rule", "body": "Critical AI interfaces and floating elements should use glassmorphism (translucency + background blur + slight border) to maintain context of what's underneath while asserting visual hierarchy.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do use glass and glass-card utilities for floating or AI-related elements.",
+      "Do use the background gradient mesh to add depth to the otherwise flat background.",
+      "Do rely on generous 1.5rem border radii for major content areas to maintain the soft, tactile feel.",
+      "Do ensure focus rings are visible on all interactive elements."
+    ],
+    "donts": [
+      "Don't use cluttered, overwhelming legacy e-commerce grids.",
+      "Don't build boring, dry B2B enterprise dashboards.",
+      "Don't use generic SaaS 'cream/sand' templates or tinted warm-yellow backgrounds; stick to the cool/crisp slate background.",
+      "Don't use side-stripe borders (border-left greater than 1px) for alerts or cards.",
+      "Don't use identical card grids endlessly; vary the bento layout."
+    ]
+  }
+}

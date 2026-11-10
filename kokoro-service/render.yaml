@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: ai-vyom-tts
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: KOKORO_LANG_CODE
+        value: a
+      - key: KOKORO_WARM_ON_START
+        value: "false"
+      - key: PYTHONUNBUFFERED
+        value: "1"
+    healthCheckPath: /health
+    maxShutdownDelaySeconds: 60
